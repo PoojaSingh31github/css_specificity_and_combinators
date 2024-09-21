@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Style a Table</title>
+    <style>
+      table {
+        width: 80%;
+        margin: 20px auto;
+        border-collapse: collapse;
+        font-family: Arial, sans-serif;
+      }
+
+      th {
+        background-color: #cccccc;
+        font-weight: bold;
+        font-size: 1.2em;
+      }
+
+      td {
+        text-align: center;
+      }
+
+      .green-bold {
+        color: green;
+        font-weight: bold;
+      }
+
+      i {
+        font-size: 30px;
+      }
+
+      .sum-row {
+        background-color: yellow;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main_div">
+      <table>
+        <thead>
+          <tr>
+            <th>Product Name</th>
+            <th>Quantity</th>
+            <th>Price</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><b>Product 1</b></td>
+            <td><i>1</i></td>
+            <td>20</td>
+          </tr>
+          <tr>
+            <td>Product 2</td>
+            <td>2</td>
+            <td>20</td>
+          </tr>
+          <tr class="green-bold">
+            <td>Product 3</td>
+            <td>3</td>
+            <td>20</td>
+          </tr>
+          <tr>
+            <td><i>Product 4</i></td>
+            <td>4</td>
+            <td>20</td>
+          </tr>
+          <tr>
+            <td><b>Product 5</b></td>
+            <td>5</td>
+            <td>20</td>
+          </tr>
+          <tr class="green-bold">
+            <td>Product 6</td>
+            <td>6</td>
+            <td>20</td>
+          </tr>
+          <tr>
+            <td>Product 7</td>
+            <td>7</td>
+            <td>20</td>
+          </tr>
+          <tr>
+            <td><i>Product 8</i></td>
+            <td>8</td>
+            <td>20</td>
+          </tr>
+          <tr class="green-bold">
+            <td><b>Product 9</b></td>
+            <td><b>9</b></td>
+            <td><b>20</b></td>
+          </tr>
+          <tr>
+            <td>Product 10</td>
+            <td>10</td>
+            <td>20</td>
+          </tr>
+          <tr class="sum-row">
+            <td colspan="2" style="text-align: right">Sum</td>
+            <td>$80</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>
