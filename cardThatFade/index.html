@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Card That Fade</title>
+    <style>
+      * {
+        background-color: black;
+      }
+      .heading {
+        text-align: center;
+        font-size: 100px;
+        font-family: "Times New Roman", serif; 
+        text-transform: uppercase;
+        background: linear-gradient(
+          180deg,
+          #ff007f,
+          #8a2be2
+        ); 
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: glow 2s ease-in-out infinite alternate;
+      }
+      .main {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+      .cards {
+        height: 200px;
+        width: 200px;
+      }
+      .cards:hover {
+        opacity: 1;
+      }
+
+      .cards:not(:hover) {
+        opacity: 0.5;
+      }
+      .cards {
+        opacity: 1;
+      }
+      .c1 {
+        background-color: red;
+      }
+      .c2 {
+        background-color: rgb(0, 255, 64);
+      }
+      .c3 {
+        background-color: rgb(251, 255, 0);
+      }
+      .c4 {
+        background-color: rgb(4, 0, 255);
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="heading">Cards</h1>
+    <div class="main">
+      <div class="cards c1"></div>
+      <div class="cards c2"></div>
+      <div class="cards c3"></div>
+      <div class="cards c4"></div>
+    </div>
+  </body>
+</html>
